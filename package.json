@@ -1,0 +1,11 @@
+{
+  "name": "app",
+  "private": true,
+  "devDependencies": {
+    "@rspack/cli": "^1.1.8",
+    "@rspack/core": "^1.1.8"
+  },
+  "scripts": {
+    "build": "rspack --config rspack.config.js"
+  }
+}
