@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is sample repo that uses jsbundling-rails to setup rspack as bundler.
 
-Things you may want to cover:
+What changes you will find.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- You will see rspack.config.js
+- This uses `rspack --config rspack.config.js` to build your assets
+- This has "@rspack/cli", "@rspack/core" as dependency.
+- Gemfile includes `jsbundling-rails`, this is pointing to forked repo of jsbundling-rails. This contain the [PR](https://github.com/saiprasaddevare/jsbundling-rails/pull/1) that does all the rspack config. 
+- Onces this PR gets approved and merged, you dont need this forked repo. You can use `jsbundling-rails` directly(The actual jsbundling-rails [repo](https://github.com/rails/jsbundling-rails) ).
+- This `jsbundling-rails` will have command `rails javascript:install:rspack`.
